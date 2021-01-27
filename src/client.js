@@ -1,3 +1,4 @@
+import axios from 'axios';
 import Response from './response';
 
 class Client {
@@ -22,6 +23,10 @@ class Client {
                 }
             }
         );
+    }
+
+    static make() {
+        return new Client(axios);
     }
 }
 
