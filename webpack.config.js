@@ -7,7 +7,8 @@ module.exports = {
         filename: 'http-client.js',
         library: 'http-client',
         libraryTarget: 'umd',
-        publicPath: '/'
+        publicPath: '/',
+        globalObject: 'this',
     },
     devServer: {
         contentBase: './dist',
